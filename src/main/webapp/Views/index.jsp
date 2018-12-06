@@ -13,6 +13,8 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <link href="Css/index.css" rel="stylesheet" id="css">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" media="screen" href="Css/index.css" type="text/css" />
+
         
         <title>Index</title>
     </head>
@@ -87,20 +89,22 @@
             
             btn_g.onclick = function() {
                 bodyy.style.filter = "grayscale(50%)";
-                bodyy.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+                bodyy.style.backgroundImage = "url('../Views/img/fond_g.jpg')";
             }
 			
             btn_nb.onclick = function() {
                 bodyy.style.filter = "grayscale(100%)";
-                bodyy.style.backgroundColor = "lightgray";
+                bodyy.style.backgroundImage = "url('../Views/img/fond_nb.jpg')";
             }
             
              btn_c.onclick = function() {
                 bodyy.style.filter = "hue-rotate(90deg)";
+                bodyy.style.backgroundImage = "url('../Views/img/fond_c.jpg')";
             }           
  
              btn_sep.onclick = function() {
-                bodyy.style.filter = "sepia(90%)";
+                bodyy.style.filter = "sepia(100%)";
+                bodyy.style.backgroundImage = "url('../Views/img/fond_sep.jpg')";
             } 
             
             cur.oninput = function() {

@@ -6,7 +6,17 @@
 body{
     background-image: url("../img/fond.jpg");
     background-size: cover;
+    filter: none;
 }
+
+
+.container {
+    padding: 2px 16px;
+}
+
+
+.custom-range {
+    width:200px;
 
 .tiles{
     text-align:center;position:relative
