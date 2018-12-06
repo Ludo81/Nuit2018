@@ -61,16 +61,40 @@
             </div>
         </div>
         
-        <div id="dark_theme" >
-            <button type="button" class="btn btn-dark" id="btn_lumi"> Baisser la luminosité </button>
-            <button type="button" class="btn btn-dark" id="btn_g"> Griser </button>
-            <button type="button" class="btn btn-dark" id="btn_nb"> Mettre en noir et blanc </button>
-            <button type="button" class="btn btn-dark" id="btn_c"> Changer les couleurs </button>
-            <button type="button" class="btn btn-dark" id="btn_sep"> Sépia </button>
-            <input type="range" class="custom-range" min="0" max="1" step="0.01" id="curseur_l">
-	</div>
-		
-		
+        
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modif" id="btnM">Mode nuit</button>
+        
+         <div id="modif" class="modal fade" tabindex="-1" role="dialog"  >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Mode nuit</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" id="close">&times; </span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <div class="btn-group-vertical" id="dark_theme"> 
+                        <button type="button" class="btn btn-light" id="btn_lumi"> Baisser la luminosité </button>
+                        <button type="button" class="btn btn-light" id="btn_g"> Griser </button>
+                        <button type="button" class="btn btn-light" id="btn_nb"> Mettre en noir et blanc </button>
+                        <button type="button" class="btn btn-light" id="btn_c"> Changer les couleurs </button>
+                        <button type="button" class="btn btn-light" id="btn_sep"> Sépia </button>
+                    </div>
+                    </div>
+                    </div> 
+                    <input type="range" class="custom-range" min="0" max="1" step="0.01" id="curseur_l">
+                </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark" id="btn_annuler"> Annuler </button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close1">Fermer</button>
+                    </div>
+                </div>
+            </div> 
+           </div>
+
 	<script>
             var bodyy = document.body;
             var btn_l = document.getElementById("btn_lumi");
@@ -78,10 +102,30 @@
             var btn_nb = document.getElementById("btn_nb");
             var btn_c = document.getElementById("btn_c");
             var btn_sep = document.getElementById("btn_sep");
+            var btn_annuler = document.getElementById("btn_annuler");
             var cur = document.getElementById("curseur_l");
-            $('#curseur').attr('data-slider');
+
         //quand on clique sur le bouton ca passe en mode nuit
-		
+            
+            var modal = document.getElementById('modif');
+            var btn = document.getElementById("btnM");
+            var fermer = document.getElementById("close");
+            var fermer1 = document.getElementById("close1");
+        //ouverture quand on clique sur le bouton
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+        //fermeture quand on clique sur la croix   
+            fermer.onclick = function() {
+                modal.style.display = "none";
+            }
+        //fermeture quand on clique sur fermer   
+            fermer1.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            
+            
             btn_l.onclick = function() {
                 bodyy.style.filter = "brightness(0.5)";
                 bodyy.style.backgroundColor = "rgb(128,128,128)";
@@ -110,6 +154,13 @@
             cur.oninput = function() {
                 bodyy.style.filter = "brightness("+this.value+")";
             }
+            
+            btn_annuler.onclick = function() {
+                bodyy.style.filter = "brightness(1) sepia(0%) hue-rotate(0deg) grayscale(0%)";
+                bodyy.style.backgroundImage = "url('../Views/img/fond.jpg')";
+            }
+            
+            
 
         </script> 
     </body>
