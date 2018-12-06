@@ -5,6 +5,7 @@
 Ce repertoire contient le défi principal de la  [Nuit de l'Info 2018](https://www.nuitdelinfo.com/) réalisé par l'équipe
 ChampoBeach de l'INU Champollion d'Albi. 
 
+L'application est accessible [ici](https://nuitdelinfo.herokuapp.com/)
 
 About the authors                                                  {#about}
 -----------------
