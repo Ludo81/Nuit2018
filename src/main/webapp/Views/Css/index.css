@@ -5,6 +5,7 @@
 
 h2 {
     text-align: center;
+    color:red;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -19,4 +20,15 @@ h2 {
 
 .container {
     padding: 2px 16px;
+}
+
+
+body {
+    background-color: yellow;
+    color:black;
+    filter: none;
+}
+
+.custom-range {
+    width:200px;
 }
