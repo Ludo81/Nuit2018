@@ -23,8 +23,15 @@ public class DAO
         this.myDataSource = dataSource;
     }
     
+    // <editor-fold defaultstate="collapsed" desc="DataRetreive DAO methods. Click on the + sign on the left to edit the code.">
+    
+    /**
+     * Cette fonction permet de récuperer tous les états de santé
+     * @return Liste d'entiers des états dans l'ordre suivant:
+     *          Infection, Fatigue, Cardio, Temperature, Nouriture, Hydratation.*/
     public List<Integer> getHealthStatus()
     {
+        
         List<Integer> hS = new ArrayList();
         
         String sql = "SELECT * FROM HEALTH";
@@ -34,9 +41,7 @@ public class DAO
         {
             ResultSet rs = stmt.executeQuery();
             while(rs.next())
-            {
-                //int val = rs.getInt(1);
-                
+            {                
                 for(int i=1; i<7; i++)
                 {
                     hS.add(rs.getInt(i));
@@ -48,4 +53,32 @@ public class DAO
         }
         return hS;
     }
+    
+    /**
+     * Cette fonction permet de récuperer toutes les classes de sécurité
+     * @return Liste des classes de sécurité de A à F.*/
+    public List<Character> getSecurityClasses()
+    {
+        
+        List<Character> sc= new ArrayList();
+        
+        String sql = "SELECT * FROM SECURITY";
+        
+        try(Connection connection = myDataSource.getConnection();
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery())
+        {
+            while(rs.next())
+            {
+                sc.add(rs.getString("CLASS").charAt(0));
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(DAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return sc;
+    }
+    // </editor-fold>
+    
+    
 }

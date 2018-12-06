@@ -30,6 +30,13 @@ public class DAOTester
         assertEquals(6,hs.size());
     }
     
+    @Test 
+    public void testSecurityClasses()
+    {
+        List sc = myDAO.getSecurityClasses();
+        assertEquals(6,sc.size());
+    }
+    
     @After
     public void tearDown() 
     {
