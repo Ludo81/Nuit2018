@@ -10,21 +10,53 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <link href="Css/index.css" rel="stylesheet" id="css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        
         <title>Index</title>
     </head>
     <body>
-        <h2>CarryHealth</h2>
-
-        <div class="card">
-          <img src="img/giletjaune.jpg" alt="Logo" style="width:100%">
-          <div class="container">
-            <h4><b>Prout</b></h4> 
-            <p>Caca du cul</p> 
-          </div>
+        <!------------------ Tiles --------------->
+        <div class="container mt-40">
+            <div class="row mt-30">
+                <div class="col-md-4 col-sm-6">
+                    <div class="tiles">
+                        <img src="img/sante.png" alt="sante">
+                        <div class="box-content">
+                            <ul class="icon">
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                            <h3 class="title">Santé</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="tiles">
+                        <img src="img/meteo.png" alt="meteo">
+                        <div class="box-content">
+                            <ul class="icon">
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                            <h3 class="title">Météo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="tiles">
+                        <img src="img/position.png" alt="position">
+                        <div class="box-content">
+                            <ul class="icon">
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                            <h3 class="title">Localisation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div id="dark_theme" >
