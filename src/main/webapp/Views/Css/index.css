@@ -8,6 +8,22 @@ body{
     background-size: cover;
 }
 
+.icone{
+    height:30px;
+    width:30px;
+    margin-bottom:9px;
+}
+.card{
+    margin-top: 100px;
+    opacity: 0.9;
+    margin-right: 10px;
+    background-color: #9E9E9E;
+}
+
+.card:hover {
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
 .tiles{
     text-align:center;position:relative
 }
@@ -58,8 +74,8 @@ body{
     top:0
 }
 .tiles:hover .icon li a:hover{
-    background:#a46789;
-    border-color:#a46789
+    background:#FFA500;
+    border-color:#FFA500;
 }
 .tiles .icon li:first-child a{
     transition:all .6s cubic-bezier(.175,.885,.32,1.275) 0s

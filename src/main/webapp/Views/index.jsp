@@ -17,42 +17,48 @@
         <title>Index</title>
     </head>
     <body>
-        <!------------------ Tiles --------------->
+        <!------------------ Tiles --------------->  
         <div class="container mt-40">
             <div class="row mt-30">
-                <div class="col-md-4 col-sm-6">
-                    <div class="tiles">
+                <div class="card">
+                    <div class="box">
+                        <div class="tiles">
                         <img src="img/sante.png" alt="sante">
-                        <div class="box-content">
-                            <ul class="icon">
-                                <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                <li><a href="#"><i class="fa fa-link"></i></a></li>
-                            </ul>
-                            <h3 class="title">Santé</h3>
+                            <div class="box-content">
+                                <ul class="icon">
+                                    <li><a href="#"><img class ="icone" src="img/heart.svg"></a></li>
+                                    <li><a href="#"><img class ="icone" src="img/pulse.svg"></a></li>
+                                </ul>
+                                <h3 class="title">Santé</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="tiles">
-                        <img src="img/meteo.png" alt="meteo">
-                        <div class="box-content">
-                            <ul class="icon">
-                                <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                <li><a href="#"><i class="fa fa-link"></i></a></li>
-                            </ul>
-                            <h3 class="title">Météo</h3>
+                <div class="card">
+                    <div class="box">
+                        <div class="tiles">
+                            <img src="img/meteo.png" alt="meteo">
+                            <div class="box-content">
+                                <ul class="icon">
+                                    <li><a href="#"><img class ="icone" src="img/brightness-max.svg"></a></li>
+                                    <li><a href="#"><img class ="icone" src="img/brightness-med.svg"></a></li>
+                                </ul>
+                                <h3 class="title">Météo</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="tiles">
-                        <img src="img/position.png" alt="position">
-                        <div class="box-content">
-                            <ul class="icon">
-                                <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                <li><a href="#"><i class="fa fa-link"></i></a></li>
-                            </ul>
-                            <h3 class="title">Localisation</h3>
+                <div class="card">
+                    <div class="box">
+                        <div class="tiles">
+                            <img src="img/position.png" alt="position">
+                            <div class="box-content">
+                                <ul class="icon">
+                                    <li><a href="#"><img class ="icone" src="img/map.svg"></i></a></li>
+                                    <li><a href="#"><img class ="icone" src="img/direction.svg"></a></li>
+                                </ul>
+                                <h3 class="title">Localisation</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
