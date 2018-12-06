@@ -78,7 +78,34 @@ public class DAO
         }
         return sc;
     }
+    
+    /**
+     * Cette fonction permet d'acceder a l'inventaire des ressources.
+     * @return Liste des pourcentages de disponibilités des ressources. 
+                Nourriture, Eau, Energetique.*/
+    public List<Integer> getStockData()
+    {
+        List<Integer> sd = new ArrayList();
+        
+        String sql="SELECT * FROM STOCK";
+        
+        try(Connection connection = myDataSource.getConnection();
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery())
+        {
+            while(rs.next())
+            {
+                for(int i=1; i<4; i++)
+                {
+                    sd.add(rs.getInt(i));
+                }
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(DAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return sd;
+    }
+    
     // </editor-fold>
-    
-    
 }

@@ -37,6 +37,13 @@ public class DAOTester
         assertEquals(6,sc.size());
     }
     
+    @Test
+    public void testStockData()
+    {
+        List sd = myDAO.getStockData();
+        assertEquals(3,sd.size());
+    }
+    
     @After
     public void tearDown() 
     {
