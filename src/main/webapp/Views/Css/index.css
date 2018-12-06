@@ -17,6 +17,7 @@ body{
 
 .custom-range {
     width:200px;
+}
 
 .icone{
     height:30px;
@@ -27,7 +28,7 @@ body{
     margin-top: 100px;
     opacity: 0.9;
     margin-right: 10px;
-    background-color: #9E9E9E;
+    background-color: #EFEFEF
 }
 
 .card:hover {
