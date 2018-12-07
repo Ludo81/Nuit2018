@@ -1,3 +1,5 @@
+package tests;
+
 import dataBase.DAO;
 import dataBase.DataSourceFactory;
 import java.util.List;

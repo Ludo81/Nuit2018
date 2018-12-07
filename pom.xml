@@ -22,14 +22,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>weatherid</groupId>
-            <artifactId>Champoid</artifactId>
-            <version>1.0</version>
-            <type>jar</type>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/WeatherLibrary.jar</systemPath>
-        </dependency>
-        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
@@ -46,7 +38,11 @@
             <artifactId>derbyclient</artifactId>
             <version>10.1.1.0</version>
         </dependency>
-        
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.9.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -104,5 +100,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
