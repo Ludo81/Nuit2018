@@ -1,5 +1,6 @@
 package tests;
 
+import com.github.dvdme.ForecastIOLib.ForecastIO;
 import dataBase.DAO;
 import dataBase.DataSourceFactory;
 import java.util.List;
@@ -45,6 +46,7 @@ public class DAOTester
         List sd = myDAO.getStockData();
         assertEquals(3,sd.size());
     }
+    
     
     @After
     public void tearDown() 
