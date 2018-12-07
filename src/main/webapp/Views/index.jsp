@@ -135,7 +135,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Mode nuit</h5>
+                  <h5 class="modal-title">Ne serait-ce pas l'heure de changer de thème?</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" id="close">&times; </span>
                   </button>
@@ -144,6 +144,8 @@
                     <div class="input-group mb-3">
                     <div class="input-group-prepend">
                     <div class="btn-group-vertical" id="dark_theme"> 
+                        <label>Choisissez le thème que vous voulez...</label>
+                        <label>Reposez vous les yeux ;)</label>
                         <button type="button" class="btn btn-light" id="btn_lumi"> Baisser la luminosité </button>
                         <button type="button" class="btn btn-light" id="btn_g"> Griser </button>
                         <button type="button" class="btn btn-light" id="btn_nb"> Mettre en noir et blanc </button>
@@ -152,6 +154,7 @@
                     </div>
                     </div>
                     </div> 
+                    <label>Réglez ici la luminosité</label>
                     <input type="range" class="custom-range" min="0" max="1" step="0.01" id="curseur_l">
                 </div>
                     <div class="modal-footer">
