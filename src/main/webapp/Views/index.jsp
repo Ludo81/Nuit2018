@@ -41,8 +41,8 @@
                             <img src="img/meteo.png" alt="meteo">
                             <div class="box-content">
                                 <ul class="icon">
-                                    <li><a href="#"><img class ="icone" src="img/brightness-max.svg"></a></li>
-                                    <li><a href="#"><img class ="icone" src="img/brightness-med.svg"></a></li>
+                                    <li><a data-title="meteoactuelle" data-toggle="modal" data-target="#meteoactuelle"><img class ="icone" src="img/brightness-max.svg"></a></li>
+                                    <li><a data-title="meteodemain" data-toggle="modal" data-target="#meteodemain"><img class ="icone" src="img/brightness-med.svg"></a></li>
                                 </ul>
                                 <h3 class="title">Météo</h3>
                             </div>
@@ -55,7 +55,7 @@
                             <img src="img/position.png" alt="position">
                             <div class="box-content">
                                 <ul class="icon">
-                                    <li><a href="#"><img class ="icone" src="img/map.svg"></i></a></li>
+                                    <li><a data-title="meteodemain" data-toggle="modal" data-target="#position"><img class ="icone" src="img/map.svg"></i></a></li>
                                     <li><a href="#"><img class ="icone" src="img/direction.svg"></a></li>
                                 </ul>
                                 <h3 class="title">Localisation</h3>
@@ -67,7 +67,69 @@
         </div>
         
         
-        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modif" id="btnM">Mode nuit</button>
+        <div class="modal fade" id="meteoactuelle" tabindex="-1" role="dialog" aria-labelledby="meteoactuelle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title custom_align" id="Heading">Météo actuelle</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <p>Temps : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Température : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Pression : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Taux d'humidité</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="meteodemain" tabindex="-1" role="dialog" aria-labelledby="meteodemain" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title custom_align" id="Heading">Météo pour demain</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <p>Temps : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Température : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Pression : </p>
+                        </div>
+                        <div class="form-group">
+                            <p>Taux d'humidité</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="position" tabindex="-1" role="dialog" aria-labelledby="position" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title custom_align" id="Heading">Position actuelle</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="450" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=iut%20paul%20sabatier%20rangeuil&key=AIzaSyBIJMcD8XxmKegQZQM1CE7mDhzGDgpuAI0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modif" id="btnM">Mode nuit</button>
         
          <div id="modif" class="modal fade" tabindex="-1" role="dialog"  >
             <div class="modal-dialog" role="document">
@@ -167,6 +229,10 @@
             
             
 
-        </script> 
+        </script>
+        
+        
+        
+        
     </body>
 </html>

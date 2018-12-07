@@ -6,61 +6,6 @@
 body{
     background-image: url("../img/fond.jpg");
     background-size: cover;
-    filter: none;
-}
-
-.modal {
-    top:0%;
-    display: none;
-    z-index: 1;
-    height:100%;
- }
- 
- #btn_sep {
-    background-color: #c68c53; 
-    color:#f9f2ec;
- }
- 
-#btn_c {
-    background-color: yellow; 
-    color:red;
- }
- 
- #btn_nb {
-    background-color: black; 
-    color:white;
- }
- 
- #btn_g {
-    background-color: grey; 
-    color:white;
- }
-
- #btn_lumi {
-    background-color: lightgrey; 
-    color:white;
- }
- 
- .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: hidden; 
-    display : block;
-}
- 
- .modal-backdrop {
-     top:20%;
-     height:100%;
-     position:relative;
- }
-
-
-.container {
-    padding: 2px 16px;
-}
-
-
-.custom-range {
-    width:200px;
 }
 
 .icone{
@@ -70,7 +15,7 @@ body{
 }
 .card{
     margin-top: 100px;
-    opacity: 0.9;
+    opacity: 0.8;
     margin-right: 10px;
     background-color: #EFEFEF
 }
