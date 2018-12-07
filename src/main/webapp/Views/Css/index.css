@@ -6,6 +6,12 @@
 body{
     background-image: url("../img/fond.jpg");
     background-size: cover;
+    height:1000px;
+}
+
+#btnM {
+    position:fixed;
+    top:0%;
 }
 
 .icone{
@@ -92,4 +98,25 @@ body{
     .tiles .box-content{
         padding-top:20%
     }
+}
+
+#btn_lumi {
+    background-color: #8c8c8c;
+    color:white;
+}
+#btn_g {
+    background-color: #404040;
+    color:#fcfcfc;
+}
+#btn_nb {
+    background-color: #0f0f0a;
+    color:#f9f9f9;
+}
+#btn_c {
+    background-color: yellow;
+    color:red;
+}
+#btn_sep {
+    background-color: #c68c53;
+    color:#f9f2ec;
 }
